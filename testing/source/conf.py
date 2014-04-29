@@ -271,7 +271,6 @@ extensions += [
     'hieroglyph',
 ]
 
-#slide_theme = 'slides'
 slide_theme = 'single-level'
 slide_levels = 3
 
