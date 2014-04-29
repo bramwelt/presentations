@@ -3,8 +3,7 @@ Presentations
 
 A collection of presentations I have given at various events.
 
-.. list-table:: Presentations
-   :widths: 15 10 30
+.. list-table::
    :header-rows: 1
 
    * - Presentation
