@@ -21,7 +21,7 @@ What is Testing?
 **Test** */tɛst/*
 
 * "The means by which the presence, quality, or
-genuineness of anything is determined; a means of trial."
+   genuineness of anything is determined; a means of trial."
 
 What Testing Give You
 ---------------------
@@ -71,22 +71,24 @@ Brief History of Unit Testing
 Integration
 -----------
 
-* Multiple parts together
-* Randomization of test runs
+* Putting the parts together
 
 Acceptance
 ----------
 
+* Requirement tests
 * Does it meet the user requirements?
 
 System
 ------
 
+* End-to-End tests
 * Given an initial input, does it produce a final output?
 
 Usability/UX
 ------------
 
+* Accessability
 * Did we check the user's mental model?
 * Are the buttons clickable?
 
@@ -126,7 +128,6 @@ Testing Tools
 =============
 
 * Load: ab, siege, jmeter
-* Fuzz: ????
 * Interface: Selenium
 * Jenkins
 * TravisCI
@@ -140,6 +141,7 @@ Coverage
 * Test ALL the code!
 
 **Issues**
+
 * False positives
 * Import issues
 * Ignore files
@@ -169,13 +171,6 @@ Resources
 * `wiki/Software_testing`_
 * Udacity_ test course
 * Alberto Savoia: `Beautiful Tests`_ (Chapter 7 of Beautiful Code)
-
-Real World Examples
--------------------
-
-* OSUOSL - GWM
-* Rackspace - Otter
-* Opscode - Cookbooks
 
 .. _Udacity: https://www.udacity.com/course/viewer#!/c-cs258/l-48587906/m-48713560
 .. _Beautiful Tests: http://cdn.ttgtmedia.com/searchSoftwareQuality/downloads/BeautifulTests.pdf
