@@ -3,8 +3,8 @@
    hieroglyph-quickstart on Thu Sep  4 15:09:10 2014.
 
 
-Mozilla Socorro
-===============
+Socorro or: How I Learned to Stop Worrying and Love The Build
+=============================================================
 
 Contents:
 
