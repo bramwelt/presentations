@@ -284,7 +284,7 @@ slide_theme_options = {
             'name': 'Trevor Bramwell',
             'twitter': '@bramwelt',
             'www': 'http://trevor.bramwell.net',
-            'github': 'http://github.com/bramwelt/presentations'
+            'github': 'bramwelt/presentations'
         },
     ],
 }
