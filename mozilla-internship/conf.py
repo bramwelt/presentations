@@ -117,7 +117,7 @@ html_theme = 'default'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = 'Socorro'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -271,16 +271,23 @@ extensions += [
     'hieroglyph',
 ]
 
-slide_theme = 'single-level'
+slide_theme = 'slides2'
 slide_levels = 3
 
 # Place custom static assets in the _static directory and uncomment
 # the following lines to include them
 
-# slide_theme_options = {
-#     'custom_css': 'custom.css',
-#     'custom_js': 'custom.js',
-# }
+slide_theme_options = {
+    'subtitle': 'Or: How I Learned to Stop Worrying And Love The Build',
+    'presenters': [
+        {
+            'name': 'Trevor Bramwell',
+            'twitter': '@bramwelt',
+            'www': 'http://trevor.bramwell.net',
+            'github': 'http://github.com/bramwelt/presentations'
+        },
+    ],
+}
 
 # ----------------------------------------------
 
