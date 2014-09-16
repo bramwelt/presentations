@@ -23,13 +23,33 @@ Who Am I?
     Stuff, things, me.
 
 
-Overview: What I contributed to Socorro
-=======================================
+Socorro: A Distributed System
+=============================
 
-* Reduced The Build Time
-* Transitioned to Travis-CI
-* Created Native System Packages
 
+
+An Internship Well Spent
+========================
+
+.. rst-class:: build
+
+  1. Cleaning up the Build System
+  2. Transitioning to Travis-CI
+  3. Creating Native System Packages
+
+.. note::
+
+    My internship can be broken down into 3 distinct parts. The first is
+    that I cleaned up the build system to remove unneeded dependencies
+    and reduce duplicate runs. In the process this cut the build time in
+    half.
+
+    The second is supplementing the build system with Travis-CI. This
+    allowed for multiple pull requests to be tested at once and reduced
+    the turn around time for merging changes.
+
+    Finally I created native system packages for easy installation and
+    deployments of Socorro.
 
 Reducing The Build Time
 =======================
