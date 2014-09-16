@@ -87,8 +87,7 @@ Socorro : /soˈko.ro/ : noun
 
     My internship can be broken down into 3 distinct parts. The first is
     that I cleaned up the build system to remove unneeded dependencies
-    and reduce duplicate runs. In the process this cut the build time in
-    half.
+    and reduce duplicate build steps. This cut the build time in half.
 
     The second is supplementing the build system with Travis-CI. This
     allowed for multiple pull requests to be tested at once and reduced
