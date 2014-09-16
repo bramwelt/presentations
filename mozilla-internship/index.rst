@@ -6,16 +6,13 @@
 Who Am I?
 =========
 
-.. rst-class:: vleft build benny-image
 
 .. figure:: /_static/benny_the_beaver.gif
-    :scale: 50 %
+    :height: 8 em
+    :width: 8 em
     :alt: http://content.sportslogos.net/logos/33/798/full/7hp60p8pey24f17y7da86g4en.gif
 
-.. rst-class:: vleft build
-
 .. figure:: /_static/osuosl.png
-    :scale: 50 %
     :alt: http://osuosl.org/sites/default/files/osllogo-web_0.png
 
 .. note::
@@ -27,6 +24,8 @@ Socorro: A Distributed System
 =============================
 
 .. figure:: /_static/breakpad.png
+    :class: flexbox vcenter
+    :height: 20em
     :alt: http://google-breakpad.googlecode.com/svn/wiki/breakpad.png
 
 .. note::

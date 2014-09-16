@@ -11,3 +11,16 @@
 a {
     border-bottom: 0px;
 }
+
+footer {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+}
+
+.source {
+    left: auto;
+    bottom: 20px;
+}
