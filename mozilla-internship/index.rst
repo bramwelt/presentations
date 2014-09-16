@@ -53,22 +53,22 @@ Socorro : /soˈko.ro/ : noun
     :alt: http://google-breakpad.googlecode.com/svn/wiki/breakpad.png
 
 
-"Hypothetically Speaking..."
-============================
+.. slide:: "Hypothetically Speaking..."
+    :class: segue large-print
 
-If you were handed a build system of Make and Bash...
+    .. note::
 
-.. note::
+        I remember the converstation I had with my mentor Lonnen before I
+        got this internship. He suggested fixing the build system as a
+        project. "Hypothetically speaking, if you were given a pile of Make
+        and bash, and had to figure out what was going wrong, what would you
+        do?"
 
-    I remember the converstation I had with my mentor Lonnen before I
-    got this internship. He suggested fixing the build system as a
-    project. "Hypothetically speaking, if you were given a pile of Make
-    and bash, and had to figure out what was going wrong, what would you
-    do?"
+        "I would run screaming away..."
 
-    "I would run screaming away..."
+        "No, but seriously Trevor, this is my LIFE!"
 
-    "No, but seriously Trevor, this is my LIFE!"
+        So I was brought in to fix up the build system.
 
 
 "What would you say...you do here?"
