@@ -10,19 +10,22 @@ Who Am I?
 .. figure:: /_static/benny_the_beaver.gif
     :height: 8 em
     :width: 8 em
-    :class: left-aligned
+    :class: center-aligned
     :alt: http://content.sportslogos.net/logos/33/798/full/7hp60p8pey24f17y7da86g4en.gif
 
+
 .. figure:: /_static/osuosl.png
-    :class: left-aligned
+    :class: center-aligned
+    :width: 12 em
+    :height: 6 em
     :alt: http://osuosl.org/sites/default/files/osllogo-web_0.png
+
 
 .. note::
 
     * Senior at Oregon State University studying Applied Computer Science
     * Student System Administrator and Software Developer at Oregon State
         University Open Source Lab
-    * Once a Mozillian, always a Mozillian
 
 
 What is Socorro?
