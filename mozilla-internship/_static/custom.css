@@ -12,6 +12,23 @@ a {
     border-bottom: 0px;
 }
 
+.right-aligned {
+    float: right;
+    display: block;
+}
+
+.left-aligned {
+    float: left;
+    display: block;
+}
+
+.center-aligned {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
 footer {
     width: 80%;
     text-align: center;

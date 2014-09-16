@@ -10,9 +10,11 @@ Who Am I?
 .. figure:: /_static/benny_the_beaver.gif
     :height: 8 em
     :width: 8 em
+    :class: left-aligned
     :alt: http://content.sportslogos.net/logos/33/798/full/7hp60p8pey24f17y7da86g4en.gif
 
 .. figure:: /_static/osuosl.png
+    :class: left-aligned
     :alt: http://osuosl.org/sites/default/files/osllogo-web_0.png
 
 .. note::
@@ -23,6 +25,9 @@ Who Am I?
 What is Socorro?
 ================
 
+.. figure:: /_static/socorro_logo.png
+    :class: right-aligned
+
 Socorro : /soˈko.ro/ : noun
 
     A distributed system for collecting, processing, and
@@ -31,10 +36,16 @@ Socorro : /soˈko.ro/ : noun
     Named after the Very Long Baseline Array (VLBA) near Socorro, New
     Mexico, USA.
 
+.. figure:: /_static/vla.jpg
+    :height: 13em
+    :width: 17em
+    :class: center-aligned
+    :alt: https://www.flickr.com/photos/caveman_92223/4750606873
+
 .. nextslide::
 
 .. figure:: /_static/breakpad.png
-    :class: flexbox vcenter
+    :class: center-aligned
     :height: 20em
     :alt: http://google-breakpad.googlecode.com/svn/wiki/breakpad.png
 
