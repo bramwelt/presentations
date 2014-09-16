@@ -19,7 +19,10 @@ Who Am I?
 
 .. note::
 
-    Stuff, things, me.
+    * Senior at Oregon State University studying Applied Computer Science
+    * Student System Administrator and Software Developer at Oregon State
+        University Open Source Lab
+    * Once a Mozillian, always a Mozillian
 
 
 What is Socorro?
