@@ -99,22 +99,43 @@ Socorro : /soˈko.ro/ : noun
 Reducing The Build Time
 =======================
 
-* From 20 minutes down to 10 minutes
-* 10 minutes * average 215 builds a month = 2150 minutes saved a month
-* 2150/60 ~= 35.8333 hours ~= 1 week of work
+.. rst-class:: build
+
+* Cut the build time from 20 minutes to 10 minutes.
+
+* Saving an approximate total of 1 week a month.
+
+.. note::
+    20 minutes ➜ 10 minutes = 10 minutes per build
+    10 minutes × 216 builds a month = 2150 minutes a month
+    2150 minutes ÷ 60 minutes an hour = 35.8333 hours
 
 .. nextslide::
+    :increment:
 
-* Caching on Jenkins
+* Ensured the socorro-virtualenv was deleted, but not pip-cache.
 
-  * pip-cache
+.. nextslide::
+    :increment:
 
-* Redundancies in Build
+* Removed build redundancies: Abusing Make.
 
-  * make -> bash -> make -> bash
-  * immediate: bootstrap
-  * found later: Django compression (webapp-django bootstrap)
+::
 
+    # scripts/build.sh
+    make clean
+    make test
+    make analysis
+    ...
+
+::
+
+    # makefile
+    analysis: bootstrap
+       ...
+
+    test: bootstrap
+       ...
 
 
 Transitioning to Travis-CI
@@ -139,6 +160,10 @@ Transitioning to Travis-CI
 
 * Caching dependencies cost extra
 
+.. note::
+
+    Transitioning to Travis-CI provided several benefits. The major one
+    being parallel builds.
 
 Creating Native Packages
 ========================
@@ -165,4 +190,4 @@ Special Thanks
 .. note::
 
     Lonnen - For mentoring me and putting up with my blabbering for 3 months.
-    Laura - For seeing my potentials and hiring me.
+    Laura - For seeing my potential and hiring me.
