@@ -53,7 +53,7 @@ Socorro : /soˈko.ro/ : noun
 "Hypothetically Speaking..."
 ============================
 
-    If you were handed a build system of Make and Bash...
+If you were handed a build system of Make and Bash...
 
 .. note::
 
@@ -67,14 +67,15 @@ Socorro : /soˈko.ro/ : noun
 
     "No, but seriously Trevor, this is my LIFE!"
 
-An Internship Well Spent
-========================
+
+"What would you say...you do here?"
+===================================
 
 .. rst-class:: build
 
-  1. Cleaning up the Build System
-  2. Transitioning to Travis-CI
-  3. Creating Native System Packages
+1. Cleaning up the Build System
+2. Transitioning to Travis-CI
+3. Creating Native System Packages
 
 .. note::
 
@@ -93,39 +94,45 @@ An Internship Well Spent
 Reducing The Build Time
 =======================
 
-  * From 20 minutes down to 10 minutes
-  * 10 minutes * average 215 builds a month = 2150 minutes saved a month
-  * 2150/60 ~= 35.8333 hours ~= 1 week of work
+* From 20 minutes down to 10 minutes
+* 10 minutes * average 215 builds a month = 2150 minutes saved a month
+* 2150/60 ~= 35.8333 hours ~= 1 week of work
 
-  * Caching on Jenkins
+.. nextslide::
 
-    * pip-cache
+* Caching on Jenkins
 
-  * Redundancies in Build
+  * pip-cache
 
-    * make -> bash -> make -> bash
-    * immediate: bootstrap
-    * found later: Django compression (webapp-django bootstrap)
+* Redundancies in Build
+
+  * make -> bash -> make -> bash
+  * immediate: bootstrap
+  * found later: Django compression (webapp-django bootstrap)
 
 
 
 Transitioning to Travis-CI
 ==========================
 
-  * Adds parallelism to builds
+* Adds parallelism to builds
 
-    * Current PRs lock builds on Jenkins. Only one PR ran at a time.
+  * Current PRs lock builds on Jenkins. Only one PR ran at a time.
 
-  * Equivalent build time without reliance on internal Infra
+.. nextslide::
 
-    * All services are run locally on the Travis VMs.
+* Equivalent build time without reliance on internal Infra
 
-  * Only allowed Ubuntu on Travis, which is divergent from our RHEL
-    deploy.
+  * All services are run locally on the Travis VMs.
 
-  * Can ship off packages.
+.. nextslide::
 
-  * Caching dependencies cost extra
+* Only allowed Ubuntu on Travis, which is divergent from our RHEL
+  deploy.
+
+* Can ship off packages.
+
+* Caching dependencies cost extra
 
 
 Creating Native Packages
@@ -148,7 +155,7 @@ Special Thanks
   * Lonnen (mentor)
   * Laura (manager)
   * Jill & Misty (intern-herders)
-  * Department of Whimsy (keeping me sane, and good laughs)
+  * Department of Whimsy (rainbow unicorns)
 
 .. note::
 
