@@ -1,0 +1,13 @@
+.title-slide hgroup h1 {
+    color:#B30000;
+    padding-bottom:20px;
+}
+
+.benny-image img {
+    width: 20%;
+    height: 20%;
+}
+
+a {
+    border-bottom: 0px;
+}

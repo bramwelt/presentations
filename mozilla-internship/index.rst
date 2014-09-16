@@ -6,17 +6,17 @@
 Who Am I?
 =========
 
+.. rst-class:: vleft build benny-image
+
 .. figure:: /_static/benny_the_beaver.gif
     :scale: 50 %
     :alt: http://content.sportslogos.net/logos/33/798/full/7hp60p8pey24f17y7da86g4en.gif
 
-    Oregon State University
+.. rst-class:: vleft build
 
 .. figure:: /_static/osuosl.png
     :scale: 50 %
     :alt: http://osuosl.org/sites/default/files/osllogo-web_0.png
-
-    OSU Open Source Lab
 
 .. note::
 

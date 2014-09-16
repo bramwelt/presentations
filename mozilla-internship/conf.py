@@ -287,6 +287,7 @@ slide_theme_options = {
             'github': 'bramwelt/presentations'
         },
     ],
+    'custom_css': 'custom.css'
 }
 
 # ----------------------------------------------
