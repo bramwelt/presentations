@@ -3,9 +3,8 @@
    hieroglyph-quickstart on Thu Sep  4 15:09:10 2014.
 
 
-Who Am I?
-=========
-
+About Me
+========
 
 .. figure:: /_static/benny_the_beaver.gif
     :height: 8 em
