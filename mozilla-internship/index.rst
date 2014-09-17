@@ -89,7 +89,7 @@ Three Major Contributions:
     installation and distribution of Socorro.
 
 
-.. slide:: "Cleaning Up The Build"
+.. slide:: 1. Cleaning Up The Build
     :class: segue large-print
 
 
@@ -135,7 +135,7 @@ Reducing The Build Time
        ...
 
 
-.. slide:: "Enter Travis [stage right]"
+.. slide:: 2. Setting up Travis-CI
     :class: segue large-print
 
 
@@ -167,7 +167,7 @@ Transitioning to Travis-CI
     being parallel builds.
 
 
-.. slide:: "Building a Harder, Better, Faster, Stronger Socorro"
+.. slide:: 3. Packing Socorro
     :class: segue large-print
 
 
