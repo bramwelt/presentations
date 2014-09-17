@@ -289,7 +289,7 @@ Production Install::
     rpm -i socorro-latest.rpm
 
 
-.. slide:: What I Learned
+.. slide:: Conclusion
     :class: segue large-print
 
 Conclusion
