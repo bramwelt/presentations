@@ -192,12 +192,18 @@ Conclusion
 Special Thanks
 ==============
 
-  * Lonnen (mentor)
-  * Laura (manager)
-  * Jill & Misty (intern-herders)
-  * Department of Whimsy (rainbow unicorns)
+  * Chris Lonnen
+  * Rob Helmer
+  * Peter Bengtsson
+  * Laura Thomson
+  * Jill Alverez & Misty Orr
+  * Interns
 
 .. note::
 
-    Lonnen - For mentoring me and putting up with my blabbering for 3 months.
-    Laura - For seeing my potential and hiring me.
+    Lonnen - availablility, guidance
+    Rob - ecstatic about my work
+    Peter - asking about my family and reminding me that (work != life)
+    Laura - For graciously giving me this opportunity
+    Jill & Misty - For running an amazing intern program
+    Interns - For making this summer super fun
