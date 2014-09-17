@@ -20,11 +20,18 @@ About Me
     :alt: http://osuosl.org/sites/default/files/osllogo-web_0.png
 
 
+.. figure:: /_static/mozilla-logo.png
+    :class: center-aligned
+    :width: 12 em
+    :height: 8 em
+    :alt: http://upload.wikimedia.org/wikipedia/commons/5/5c/Mozilla_dinosaur_head_logo.png
+
 .. note::
 
     * Senior at Oregon State University studying Applied Computer Science
     * Student System Administrator and Software Developer at Oregon State
         University Open Source Lab
+    * Intern at Mozilla working on Socorro
 
 
 What is Socorro?
