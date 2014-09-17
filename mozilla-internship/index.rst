@@ -105,34 +105,38 @@ Three Major Contributions:
     :class: segue large-print
 
 
-Reducing The Build Time
-=======================
+Cleaning up The Build
+=====================
 
-.. rst-class:: build
+1. Caching Dependencies
+2. Removing Build Redundancies
 
-* Cut the build time from 20 minutes to 10 minutes.
 
-* Saving an approximate total of 1 week a month.
+Caching Dependencies
+====================
 
-.. note::
-    20 minutes ➜ 10 minutes = 10 minutes per build
-    10 minutes × 216 builds a month = 2150 minutes a month
-    2150 minutes ÷ 60 minutes an hour = 35.8333 hours
-
-.. nextslide::
-    :increment:
-
-* Ensured the socorro-virtualenv was deleted, but not pip-cache.
+* Build using Jenkins (ci.mozilla.org)
+* Runs ``scripts/build.sh``
+* Destroys Workspace Each Run
 
 .. nextslide::
     :increment:
 
-* Removed build redundancies: Abusing Make.
+* Python Virtualenv Package Poisoning
+* pip-cache
+* 6 minute saving
+
+
+Removed Build Redundancies
+==========================
+
+Makefile & Bash
 
 ::
 
     # scripts/build.sh
     make clean
+    make bootstrap
     make test
     make analysis
     ...
@@ -146,6 +150,42 @@ Reducing The Build Time
     test: bootstrap
        ...
 
+.. nextslide::
+    :increment:
+
+* Configuration Variables
+* Make Target -> Bash Script
+
+.. nextslide::
+    :increment:
+
+Before::
+
+    $ wc -l Makefile
+    122 Makefile
+
+After::
+
+    $ wc -l Makefile
+    31 Makefile
+
+
+Cleaning Up The Build
+=====================
+
+.. rst-class:: build
+
+* Build Time: 20 minutes down to 10
+
+    * Caching Dependencies (6 minutes)
+    * Removing Build Redundancy (4 minutes)
+
+* Total savings: 1 Week a Month
+
+.. note::
+    20 minutes ➜ 10 minutes = 10 minutes per build
+    10 minutes × 216 builds a month = 2150 minutes a month
+    2150 minutes ÷ 60 minutes an hour = 35.8333 hours
 
 .. slide:: 2. Setting up Travis-CI
     :class: segue large-print
@@ -154,29 +194,49 @@ Reducing The Build Time
 Transitioning to Travis-CI
 ==========================
 
-* Adds parallelism to builds
+Problems with Jenkins:
 
-  * Current PRs lock builds on Jenkins. Only one PR ran at a time.
+    * Shared Test Infra - Multi-job Build Lock
 
-.. nextslide::
-
-* Equivalent build time without reliance on internal Infra
-
-  * All services are run locally on the Travis VMs.
+    * Remote Resources - Networks Fail
 
 .. nextslide::
 
-* Only allowed Ubuntu on Travis, which is divergent from our RHEL
-  deploy.
+.travis.yml::
 
-* Can ship off packages.
+    language: python
+    python:
+      - "2.6"
+    addons:
+      postgresql: "9.3"
+    services:
+      - rabbitmq
+      - memcached
+      - elasticsearch
+    before_install:
+      - sudo apt-get update -qq
+      - sudo apt-get install -y npm libxml2-dev libxslt1-dev
+      - npm install -g less
+    script:
+      - ./scripts/build.sh
 
-* Caching dependencies cost extra
+.. nextslide::
 
-.. note::
+Drawbacks:
 
-    Transitioning to Travis-CI provided several benefits. The major one
-    being parallel builds.
+    * Only Supports Ubuntu - We Run RHEL
+
+    * Caching only available in Travis-Pro
+
+    * No Build Chaining
+
+.. nextslide::
+
+Benefits:
+
+    * Local Test Resources
+
+    * PRs Built in Parallel
 
 
 .. slide:: 3. Packing Socorro
@@ -186,18 +246,47 @@ Transitioning to Travis-CI
 Creating Native Packages
 ========================
 
-* FPM super easy to use.
+FPM - Effing Package Management:
 
-::
+    * Quick and Easy
 
-    $ fpm -s dir -t rpm -n socorro \
-          -v 103 \
-          socorro/
+    * Builds DEBs & RPMs
 
+.. nextslide::
 
-* Now have RPMs
+Command Line::
 
-* deploy.sh -> pre/post-install
+    fpm -s dir -t $BUILD_TYPE \
+        -v $BUILD_VERSION \
+        -n "socorro" \
+        -m "<socorro-dev@mozilla.com>" \
+        -C $BUILD_DIR \
+        --epoch 1 \
+        --license "MPL" \
+        --vendor "Mozilla" \
+        --url "https://wiki.mozilla.org/Socorro" \
+        --description "$DESC" \
+        --before-install scripts/package/before-install.sh \
+        --after-install scripts/package/after-install.sh \
+        --before-remove scripts/package/before-remove.sh \
+        --after-remove scripts/package/after-remove.sh \
+        --config-files /etc/socorro \
+        --exclude *.pyc \
+        --exclude *.swp \
+        data etc var
+
+.. nextslide::
+
+deploy.sh:
+
+    * pre-install.sh
+    * post-install.sh
+
+.. nextslide::
+
+Production Install::
+
+    rpm -i socorro-latest.rpm
 
 
 .. slide:: What I Learned
@@ -210,6 +299,16 @@ Conclusion
 2. Setup Travis-CI for testing Pull Requests
 3. Created Native System Packages (RPMs)
 
+.. nextslide::
+
+Technologies:
+
+    * Make
+    * Bash
+    * Travis
+    * FPM
+    * Packer
+    * Puppet
 
 Special Thanks
 ==============
@@ -219,7 +318,7 @@ Special Thanks
   * Peter Bengtsson
   * Laura Thomson
   * Jill Alverez & Misty Orr
-  * Interns
+  * Mozilla Interns
 
 .. note::
 
