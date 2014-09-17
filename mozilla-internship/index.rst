@@ -129,6 +129,10 @@ Reducing The Build Time
        ...
 
 
+.. slide:: "Enter Travis [stage right]"
+    :class: segue large-print
+
+
 Transitioning to Travis-CI
 ==========================
 
@@ -156,6 +160,11 @@ Transitioning to Travis-CI
     Transitioning to Travis-CI provided several benefits. The major one
     being parallel builds.
 
+
+.. slide:: "Building a Harder, Better, Faster, Stronger Socorro"
+    :class: segue large-print
+
+
 Creating Native Packages
 ========================
 
@@ -165,6 +174,9 @@ Creating Native Packages
 
   * deploy.sh -> pre/post-install
 
+
+.. slide:: "Benefits, Drawbacks, Opportunities"
+    :class: segue large-print
 
 Conclusion
 ==========
