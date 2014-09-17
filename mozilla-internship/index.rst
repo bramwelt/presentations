@@ -168,11 +168,18 @@ Transitioning to Travis-CI
 Creating Native Packages
 ========================
 
-  * FPM super easy to use.
+* FPM super easy to use.
 
-  * Now have RPMs
+::
 
-  * deploy.sh -> pre/post-install
+    $ fpm -s dir -t rpm -n socorro \
+          -v 103 \
+          socorro/
+
+
+* Now have RPMs
+
+* deploy.sh -> pre/post-install
 
 
 .. slide:: "Benefits, Drawbacks, Opportunities"
