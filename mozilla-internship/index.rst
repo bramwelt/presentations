@@ -65,22 +65,27 @@ Socorro : /soˈko.ro/ : noun
 
 .. rst-class:: build
 
-1. Cleaning up the Build System
-2. Transitioning to Travis-CI
-3. Creating Native System Packages
+Three Major Contributions:
+
+1. Cleaned up the Build System
+2. Setup Travis-CI for testing Pull Requests
+3. Created Native System Packages (RPMs)
 
 .. note::
 
-    My internship can be broken down into 3 distinct parts. The first is
-    that I cleaned up the build system to remove unneeded dependencies
-    and reduce duplicate build steps. This cut the build time in half.
+    I made three major contributions to Socorro over the Summer.
 
-    The second is supplementing the build system with Travis-CI. This
-    allowed for multiple pull requests to be tested at once and reduced
-    the turn around time for merging changes.
+    The first half I spent removing redundant steps and dependencies
+    within the build system. Cutting the build time in half.
 
-    Finally I created native system packages for easy installation and
-    deployments of Socorro.
+    The second half I spent adding Travis-CI support, and updating the
+    build to package Socorro as a native appliction. Allowing for easier
+    installation and distribution of Socorro.
+
+
+.. slide:: "Cleaning Up The Build"
+    :class: segue large-print
+
 
 Reducing The Build Time
 =======================
