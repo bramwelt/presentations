@@ -56,7 +56,19 @@ Socorro : /soˈko.ro/ : noun
 
 .. nextslide::
 
+.. figure:: /_static/socorro-block-diagram.png
+    :class: center-aligned
+
+.. nextslide::
+
 .. figure:: /_static/breakpad.png
+    :class: center-aligned
+    :height: 20em
+    :alt: http://google-breakpad.googlecode.com/svn/wiki/breakpad.png
+
+.. nextslide::
+
+.. figure:: /_static/breakpad-with-socorro.png
     :class: center-aligned
     :height: 20em
     :alt: http://google-breakpad.googlecode.com/svn/wiki/breakpad.png
