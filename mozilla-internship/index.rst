@@ -74,7 +74,7 @@ Socorro : /soˈko.ro/ : noun
     :alt: http://google-breakpad.googlecode.com/svn/wiki/breakpad.png
 
 
-.. slide:: "Internship Goal: Fix The Build System"
+.. slide:: Overview
     :class: segue large-print
 
 
@@ -200,7 +200,7 @@ Creating Native Packages
 * deploy.sh -> pre/post-install
 
 
-.. slide:: "Benefits, Drawbacks, Opportunities"
+.. slide:: What I Learned
     :class: segue large-print
 
 Conclusion
