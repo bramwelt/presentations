@@ -206,6 +206,10 @@ Creating Native Packages
 Conclusion
 ==========
 
+1. Cleaned up the Build System
+2. Setup Travis-CI for testing Pull Requests
+3. Created Native System Packages (RPMs)
+
 
 Special Thanks
 ==============
