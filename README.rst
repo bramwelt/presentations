@@ -12,6 +12,6 @@ A collection of presentations I have given at various events.
    * - Testing
      - Oregon State University LUG
      - April 29, 2014
-   * - [Mozilla Internship]
+   * - Socorr Or: How I Learned to Stop Worrying And Love The Build
      - Mozilla HQ - Mountain View, CA
      - September 17th, 2014
